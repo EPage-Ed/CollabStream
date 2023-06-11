@@ -11,7 +11,13 @@
 		D80DC0282A34EC0D00BD4EC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC0272A34EC0D00BD4EC1 /* ContentView.swift */; };
 		D80DC02A2A34EC0F00BD4EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80DC0292A34EC0F00BD4EC1 /* Assets.xcassets */; };
 		D80DC02D2A34EC0F00BD4EC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80DC02C2A34EC0F00BD4EC1 /* Preview Assets.xcassets */; };
-		D80DC02F2A34EC0F00BD4EC1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC02E2A34EC0F00BD4EC1 /* Item.swift */; };
+		D80DC02F2A34EC0F00BD4EC1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80DC02E2A34EC0F00BD4EC1 /* Note.swift */; };
+		D893ABD02A352EFE00DED359 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D893ABCF2A352EFE00DED359 /* Activity.swift */; };
+		D893ABD22A35318600DED359 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D893ABD12A35318600DED359 /* Manager.swift */; };
+		D893ABD52A3534D500DED359 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = D893ABD42A3534D500DED359 /* Movies.json */; };
+		D893ABD72A3534F900DED359 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = D893ABD62A3534F900DED359 /* Library.swift */; };
+		D893ABD92A35352C00DED359 /* Poster.swift in Sources */ = {isa = PBXBuildFile; fileRef = D893ABD82A35352C00DED359 /* Poster.swift */; };
+		D893ABDB2A353AA300DED359 /* MoviePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D893ABDA2A353AA300DED359 /* MoviePlayerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +26,15 @@
 		D80DC0272A34EC0D00BD4EC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D80DC0292A34EC0F00BD4EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80DC02C2A34EC0F00BD4EC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D80DC02E2A34EC0F00BD4EC1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D80DC02E2A34EC0F00BD4EC1 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		D80DC0302A34EC0F00BD4EC1 /* CollabStream.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CollabStream.entitlements; sourceTree = "<group>"; };
 		D80DC0312A34EC0F00BD4EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D893ABCF2A352EFE00DED359 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		D893ABD12A35318600DED359 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		D893ABD42A3534D500DED359 /* Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
+		D893ABD62A3534F900DED359 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		D893ABD82A35352C00DED359 /* Poster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poster.swift; sourceTree = "<group>"; };
+		D893ABDA2A353AA300DED359 /* MoviePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePlayerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +67,14 @@
 		D80DC0242A34EC0D00BD4EC1 /* CollabStream */ = {
 			isa = PBXGroup;
 			children = (
+				D893ABD32A35338A00DED359 /* Models */,
 				D80DC0252A34EC0D00BD4EC1 /* CollabStreamApp.swift */,
 				D80DC0272A34EC0D00BD4EC1 /* ContentView.swift */,
+				D893ABDA2A353AA300DED359 /* MoviePlayerVC.swift */,
 				D80DC0292A34EC0F00BD4EC1 /* Assets.xcassets */,
-				D80DC02E2A34EC0F00BD4EC1 /* Item.swift */,
+				D80DC02E2A34EC0F00BD4EC1 /* Note.swift */,
+				D893ABCF2A352EFE00DED359 /* Activity.swift */,
+				D893ABD12A35318600DED359 /* Manager.swift */,
 				D80DC0302A34EC0F00BD4EC1 /* CollabStream.entitlements */,
 				D80DC0312A34EC0F00BD4EC1 /* Info.plist */,
 				D80DC02B2A34EC0F00BD4EC1 /* Preview Content */,
@@ -72,6 +88,16 @@
 				D80DC02C2A34EC0F00BD4EC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D893ABD32A35338A00DED359 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D893ABD42A3534D500DED359 /* Movies.json */,
+				D893ABD62A3534F900DED359 /* Library.swift */,
+				D893ABD82A35352C00DED359 /* Poster.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +160,7 @@
 			files = (
 				D80DC02D2A34EC0F00BD4EC1 /* Preview Assets.xcassets in Resources */,
 				D80DC02A2A34EC0F00BD4EC1 /* Assets.xcassets in Resources */,
+				D893ABD52A3534D500DED359 /* Movies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,8 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D80DC0282A34EC0D00BD4EC1 /* ContentView.swift in Sources */,
-				D80DC02F2A34EC0F00BD4EC1 /* Item.swift in Sources */,
+				D80DC02F2A34EC0F00BD4EC1 /* Note.swift in Sources */,
+				D893ABD02A352EFE00DED359 /* Activity.swift in Sources */,
 				D80DC0262A34EC0D00BD4EC1 /* CollabStreamApp.swift in Sources */,
+				D893ABDB2A353AA300DED359 /* MoviePlayerVC.swift in Sources */,
+				D893ABD92A35352C00DED359 /* Poster.swift in Sources */,
+				D893ABD22A35318600DED359 /* Manager.swift in Sources */,
+				D893ABD72A3534F900DED359 /* Library.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +320,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,8 +351,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
